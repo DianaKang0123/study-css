@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정렬</title>
+    <style>
+        #horizon{
+            width: 300px;
+            text-align: center;
+            /* margin: 상하 좌우 */
+            margin: 0 auto;
+        }
+        #wrap{
+            width: 500px;
+            height: 300px;
+            border: 1px solid gray;
+            /* 부모에 flex와 center을 주면 자식은 다 가운데 정렬된다  */
+            display: flex;
+            /* 수평정렬 */
+            justify-content: center;
+            /* 수직 정렬 */
+            align-items: center;
+            /* 라인하이트는 블록요소에서 잘 먹지 않음 */
+            /* line-height: 300px */
+        }
+        #article, #container{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            /* margin: 0 auto; */
+        }
+    </style>
+</head>
+<body>
+    <div id="horizon">수평 정렬</div>
+    <div id="wrap">
+        <div id="container"></div>
+        <div id="article"></div>
+    </div> 
+</body>
+</html>

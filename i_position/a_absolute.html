@@ -1,0 +1,36 @@
+<!-- 
+    absolute
+    무조건 해당 위치로 이동한다.
+    브라우저를 기준으로 삼으며, 만약 top:0을 작성하면 가장 위에 붙는다.
+    다른 요소랑 겹치든 말든 아무 신경을 안쓰고 해당위치에 놓인다.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position-absolute</title>
+    <style>
+        #element1{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left:30%;
+            background-color: red;
+        }
+        #element2{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left:30%;
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div id="element1"></div>
+    <div id="element2"></div>
+</body>
+</html>

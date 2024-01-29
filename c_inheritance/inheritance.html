@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일 상속</title>
+    <style>
+        /* *을 쓰면 전체를 검사해야하기떄문에 body를 많이 사용함 */
+        body{ 
+            /* button의 경우 black이 더 우선순위 */
+            color: green;
+        }
+        /* body보다 div가 가까움 */
+        div.inheritance-test{
+            color:red;
+            border:3px dashed #30f;
+            padding: 30px;
+        }
+        h1{
+            padding:inherit
+        }
+        p{
+            border: inherit;
+        }
+
+        button{
+            color: inherit;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="inheritance-test">
+        DIV
+        <h1>Heading</h1>
+        <p>
+            paragraph <strong>strong</strong>
+        </p>
+        <button>Button</button>
+    </div>
+</body>
+</html>
